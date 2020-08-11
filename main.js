@@ -480,8 +480,8 @@ export default function(){
                 
             // draw graphs
             drawCells.each(function(d,i){
-                var xStudy = d[0];
-                var yStudy = d[1];
+                var xStudy = d[1];
+                var yStudy = d[0];
                 var accessions = {};
                 
                 // find accessions which are measured in both studies
