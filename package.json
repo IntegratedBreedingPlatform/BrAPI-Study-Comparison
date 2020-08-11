@@ -5,12 +5,11 @@
   "main": "build/StudyComparison.js",
   "scripts": {
     "prepare": "rm -rf build && mkdir build && rollup -f umd -n StudyComparison -o build/StudyComparison.js -- main.js",
-    "build_example": "rm -rf example && mkdir example && wrapbrapp && cp build/StudyComparison.js node_modules/@solgenomics/brapijs/build/BrAPI.js example/",
-    "version": "npm run prepare && npm run build_example && git add example"
+    "build_example": "rm -rf example && mkdir example && wrapbrapp && cp build/StudyComparison.js node_modules/@solgenomics/brapijs/build/BrAPI.js example/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/solgenomics/BrAPI-Study-Comparison.git"
+    "url": "git+https://github.com/IntegratedBreedingPlatform/BrAPI-Study-Comparison"
   },
   "author": "David Lyon <npm@dauglyon.com>",
   "license": "MIT",
@@ -19,7 +18,7 @@
   },
   "homepage": "https://github.com/solgenomics/BrAPI-Study-Comparison#readme",
   "dependencies": {
-    "@solgenomics/brapijs": "^0.2.4",
+    "@solgenomics/brapijs": "git+ssh://git@github.com/IntegratedBreedingPlatform/BrAPI-js.git#semver:^1.0.1",
     "@solgenomics/brapp-wrapper": "^1.0.0",
     "rollup": "^0.56.1"
   },
